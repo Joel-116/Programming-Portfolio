@@ -1,0 +1,8 @@
+C:\Users\jogos\Joel Calculadora\Calculadora_Joel\bin\Debug\Calculadora_Joel.exe.config
+C:\Users\jogos\Joel Calculadora\Calculadora_Joel\bin\Debug\Calculadora_Joel.exe
+C:\Users\jogos\Joel Calculadora\Calculadora_Joel\bin\Debug\Calculadora_Joel.pdb
+C:\Users\jogos\Joel Calculadora\Calculadora_Joel\obj\Debug\Calculadora_Joel.csproj.AssemblyReference.cache
+C:\Users\jogos\Joel Calculadora\Calculadora_Joel\obj\Debug\Calculadora_Joel.csproj.SuggestedBindingRedirects.cache
+C:\Users\jogos\Joel Calculadora\Calculadora_Joel\obj\Debug\Calculadora_Joel.csproj.CoreCompileInputs.cache
+C:\Users\jogos\Joel Calculadora\Calculadora_Joel\obj\Debug\Calculadora_Joel.exe
+C:\Users\jogos\Joel Calculadora\Calculadora_Joel\obj\Debug\Calculadora_Joel.pdb
