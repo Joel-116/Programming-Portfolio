@@ -16,15 +16,7 @@ namespace Calculadora_Basica
             double valor1 = 0, valor2 = 0, resultado, numero; // usando double para ter mais precisão nas casas depois da virgula (64 bits), atribuindo 0 aos valores
             string operador, valorDigitado;
             bool numero_inteiro;
-
-            /*Explicando o projeto e a lógica que vamos aplicar:
-             * PRIMEIRA ETAPA
-             Primeiro precisaremos que o usuário digite o primeiro valor,
-             Precisaremos validar os números e exibir uma mensagem caso o número não seja válido,
-             Depois precisamos pedir para o usuário digitar um operador matemático ( / | + | * | - | %(MOD) ),
-             Agora pedimos para o usuário digitar o segundo valor,
-             E aí efetuar uma operação matemática com base nos valores e operador informado pelo usuário, retornar este cálculo para o usuário.*/
-
+            
             Console.WriteLine("Digite o primeiro valor e pressione enter: ");
             valorDigitado = Console.ReadLine();
 
@@ -33,7 +25,7 @@ namespace Calculadora_Basica
              * ele não lança uma exceção se a conversão falhar.*/
             numero_inteiro = double.TryParse(valorDigitado, out numero);
 
-            //Começamos nossa condicional para fazer a validação, 
+            //Começamos nossa condicional para fazer a validação 
             if (numero_inteiro)
             {
                 valor1 = Math.Round(double.Parse(valorDigitado), 3);//tendo essa validação vamos precisar armazenar o valor1 apenas se for true
@@ -49,10 +41,6 @@ namespace Calculadora_Basica
             Console.WriteLine("Digite a operação matemática desejada: ( /= divisão , * = multiplicação, + = soma, - = subtração e % = MOD resto ): ");
             operador = Console.ReadLine();
 
-            //SEGUNDA ETAPA
-            /*É a repetição da primeira etapa com a diferença de que vamos armazenar o segundo valor digitado na variavél valor2
-             a validação e a estrutura de decição permanece a mesma*/
-
             Console.WriteLine("Digite o segundo valor: ");
             valorDigitado = Console.ReadLine();
             numero_inteiro = double.TryParse(valorDigitado, out numero);
@@ -64,13 +52,6 @@ namespace Calculadora_Basica
             {
                 Console.WriteLine("Digite um número válido");
             }
-
-            //TERCEIRA ETAPA
-            /*Para que consigamos usar os operadores vamos precisar o tipo de operador através de uma switch case
-             assim, poderemos criar uma estrutura de decisão e aplicar o operador escolhido.
-             Para escrevermos o resultado do cálculo precisamos fazer a concatenação de string e variáveis. 
-             Utilizando o auxiliar $, que é declarado antes da aspas da nossa string, 
-             sendo assim qualquer variável que eu queira exibir na minha string basta eu informa-la dentro das chave {minhaVariavel}.*/
 
             switch (operador)
             {
